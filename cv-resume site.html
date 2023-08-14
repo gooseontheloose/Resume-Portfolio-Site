@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
       <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
       <style>
          html,
          body,
@@ -153,10 +154,11 @@
             <i class="fa fa-book fa-fw"></i> Blog
             </a>
             <!-- Additional buttons at the bottom-center of the navigation -->
-            <a href="#" class="w3-bar-item w3-button w3-padding" onclick="openContactModal()" style="position: absolute; bottom: 65px; left: 50%; transform: translateX(-50%); background-color: #596CCE; color: white; display: block; padding: 16px 20px;">
+            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rea-media/strategy-planning-call'});return false;" class="w3-bar-item w3-button w3-padding" onclick="openContactModal()" style="         border-radius: 4px;
+               position: absolute; bottom: 65px; left: 50%; transform: translateX(-50%); background-color: #596CCE; color: white; display: block; padding: 16px 20px;">
             <i class="fa fa-info-circle fa-fw"></i> Contact
             </a>
-            <a href="https://github.com/gooseontheloose/Resume-Portfolio-Site" target="_blank" class="w3-bar-item w3-button w3-padding" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: #596CCE; color: white; display: block; padding: 16px 20px;">
+            <a href="https://github.com/gooseontheloose/Resume-Portfolio-Site" target="_blank" class="w3-bar-item w3-button w3-padding" style="         border-radius: 4px; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: #596CCE; color: white; display: block; padding: 16px 20px;">
             <i class="fa fa-github fa-fw"></i> Steal My Site
             </a>
          </div>
@@ -193,10 +195,10 @@
                      </div>
                   </div>
                   <div class="w3-container">
-                     <p><i class="fa fa-laptop fa-fw w3-margin-right w3-large" style="color: #596CCE;"></i>Full-Stack Web Developer</p>
+                     <p><i class="fa fa-laptop fa-fw w3-margin-right w3-large"  style="color: #596CCE;"></i>Full-Stack Web Developer</p>
                      <p><i class="fa fa-home fa-fw w3-margin-right w3-large" style="color: #596CCE;"></i>Albany, New York</p>
-                     <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large" style="color: #596CCE;"></i>oliver@rea.media</p>
-                     <p><i class="fa fa-phone fa-fw w3-margin-right w3-large" style="color: #596CCE;"></i>+1(518)808-1122</p>
+                     <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large" style="color: #596CCE;"></i><a href="mailto:oliver@rea.media" target="_blank">oliver@rea.media</a></p>
+                     <p><i class="fa fa-phone fa-fw w3-margin-right w3-large" style="color: #596CCE;"></i><a href="tel:15188081122" target="_blank">+1(518)808-1122</a></p>
                      <span class="w3-tag w3-round project-link" style="background-color: #596CCE;">
                      <a href="https://github.com/gooseontheloose" target="_blank" style="color: white;">Github</a>
                      </span>
@@ -294,7 +296,17 @@
                         <p>User-centric experiences are my priority. I craft lightweight, efficient, and user-friendly solutions that elevate digital interactions. Drawing from my own experiences growing up with clunky websites, I'm committed to providing seamless digital journeys.</p>
                         <p>Collaborating closely with clients is deeply rewarding. I enjoy bringing their ideas to life while introducing them to the transformative power of technology. My father's IT business and early computer exposure ignited my passion for tech's potential to change the world.</p>
                         <p>My self-taught journey, spanning over 15 years, showcases that expertise transcends formal education. My goal remains unwavering: crafting impactful digital solutions that resonate with users and clients alike.</p>
+                        <!-- Additional button centered with padding underneath -->
+                        <div style="display: flex; flex-direction: column; align-items: center; padding-top: 20px;">
+                           <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rea-media/strategy-planning-call'});return false;"
+                              class="w3-bar-item w3-button w3-padding" style="width: 180px;          border-radius: 4px;
+                              ; background-color: #596CCE; color: white; padding: 16px 20px;">
+                           <i class="fa fa-phone fa-fw w3-margin-right w3-large" style="color: white;"></i>
+                           Schedule Call
+                           </a>
+                        </div>
                         <br>
+                        </a>
                      </div>
                   </div>
                </section>
@@ -630,5 +642,6 @@
              }, 1000);
          }
       </script>
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
    </body>
 </html>
